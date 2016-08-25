@@ -49,9 +49,11 @@ git checkout (branch)
 
 ```shell
 // On the branch that you want to merge with, the neglect branch
-git merge (target_branch_name)
 git checkout (target_branch_name)
-git merge (neglect_branch_name)
+git pull origin (target_branch_name)
+git merge --no-ff (neglect_branch_name) // No fast forward (Do not lost commits)
+git push origin (target_branch_name)
+git checkout (neglect_branch_name) // Return to neglet branch
 ```
 
 
