@@ -18,7 +18,7 @@ git clone (username)@(host):(/path/to/repo)
 #### Push changes to branch
 
 ```shell
-git add * // if new files
+git add * # if new files
 git commit -m "(commit_message)"
 git push origin (branch)
 ```
@@ -48,7 +48,7 @@ git checkout (branch)
 #### Merge branch into another
 
 ```shell
-// On the branch that you want to merge with, the neglect branch
+# On the branch that you want to merge with, the neglect branch
 git checkout (target_branch_name)
 git pull origin (target_branch_name)
 git merge --no-ff (neglect_branch_name) // No fast forward (Do not lost commits)
@@ -57,7 +57,7 @@ git checkout (neglect_branch_name) // Return to neglet branch
 ```
 
 ```shell
-// develop to master (Fire command from develop branch)
+# develop to master (Fire command from develop branch)
 git checkout master && git pull origin master && git merge --no-ff -m "merge develop to master" consejos-staging && git push origin master && git checkout consejos-staging
 ```
 
@@ -69,6 +69,13 @@ git status
 ```
 
 
+#### Undo/Remove commit
+
+```shell
+git revert -m "revert commit (description)" (commit_id)
+```
+
+
 #### Create tag to commit
 
 ```shell
@@ -76,7 +83,7 @@ git tag (tag_name) (commit_id)
 ```
 
 
-#### Get repo log
+#### Get repo log (All commits history)
 
 ```shell
 git log
