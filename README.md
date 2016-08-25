@@ -56,6 +56,11 @@ git push origin (target_branch_name)
 git checkout (neglect_branch_name) // Return to neglet branch
 ```
 
+```shell
+// develop to master (Fire command from develop branch)
+git checkout master && git pull origin master && git merge --no-ff -m "merge develop to master" consejos-staging && git push origin master && git checkout consejos-staging
+```
+
 
 #### Get repo status
 
