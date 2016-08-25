@@ -51,14 +51,14 @@ git checkout (branch)
 # On the branch that you want to merge with, the neglect branch
 git checkout (target_branch_name)
 git pull origin (target_branch_name)
-git merge --no-ff (neglect_branch_name) // No fast forward (Do not lost commits)
+git merge --no-ff (neglect_branch_name) # No fast forward (To not lose commits)
 git push origin (target_branch_name)
-git checkout (neglect_branch_name) // Return to neglet branch
+git checkout (neglect_branch_name) # Return to neglet branch
 ```
 
 ```shell
-# develop to master (Fire command from develop branch)
-git checkout master && git pull origin master && git merge --no-ff -m "merge develop to master" consejos-staging && git push origin master && git checkout consejos-staging
+# merge develop into master (Fire command from develop branch)
+git checkout master && git pull origin master && git merge --no-ff -m "merge develop to master" develop && git push origin master && git checkout develop
 ```
 
 
