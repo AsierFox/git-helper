@@ -27,6 +27,7 @@ Thumbs.db
 
 # Android Studio
 *.iml
+.gradle/
 .idea/
 build/
 captures
