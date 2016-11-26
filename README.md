@@ -45,6 +45,17 @@ git checkout (branch)
 ```
 
 
+#### Sync master with develop
+```shell
+# Merge master into develop (Fire command from master branch, due to is AHEAD)
+git checkout master
+git merge develop
+# Merge develop to master
+git checkout develop
+git merge master
+```
+
+
 #### Merge branch into another
 
 ```shell
