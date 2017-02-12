@@ -72,6 +72,16 @@ git checkout (neglect_branch_name) # Return to neglet branch
 git checkout master && git pull origin master && git merge --no-ff -m "merge develop to master" develop && git push origin master && git checkout develop
 ```
 
+#### Change remote from Bitbucket repository to Github
+
+```shell
+git remote rename origin bitbucket
+git remote add origin <url_github_repo>
+git push origin master
+
+git remote rm bitbucket
+```
+
 
 #### Get repo status
 
